@@ -22,8 +22,8 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#f4f5f7]">
-    <section class="max-w-md min-h-screen bg-[#f4f5f7] mx-auto content-center">
+  <body class="bg-[#f4f5f7] ">
+    <section class="max-w-md min-h-screen bg-[#f4f5f7] mx-auto content-center shadow-lg">
       <!-- header section  -->
       <header>
         <div class="relative grid justify-items-center">
@@ -43,6 +43,7 @@
               <input
                 id="account-number"
                 class="text-base font-medium text-gray-900 py-3 px-5 rounded-[10px] border-0 bg-[#f4f5f7] placeholder:text-base placeholder:text-gray-500 placeholder:font-light outline-none focus:border-1 focus:border-gray-300"
+                value="01234567890"
                 type="number"
                 placeholder="Enter your number"
                 required
@@ -50,19 +51,20 @@
               <p id="wrong-number" class="text-base text-red-700 font-medium hidden">Wrong Mobile Number</p>
               <label
                 class="fieldset-label text-base font-medium text-gray-900 mt-4"
-                >4 Digit Pin</label
+                >Payoo Pin</label
               >
               <input
               id="account-pin"
                 class="text-base font-medium text-gray-900 py-3 px-5 rounded-[10px] border-0 bg-[#f4f5f7] placeholder:text-base placeholder:text-gray-500 placeholder:font-light outline-none focus:border-1 focus:border-gray-300"
                 type="number"
+                value="1234"
                 placeholder="Enter 4 Digit Pin"
                 required
               />
               <p id="wrong-pin" class="text-base text-red-700 font-medium hidden">Wrong Pin</p>
               <button
                 id="login-btn"
-                class="mt-4 bg-blue-600 border-0 py-3 rounded-3xl text-xl font-semibold text-white"
+                class="mt-4 bg-blue-600 border-0 py-3 rounded-3xl text-xl font-semibold text-white hover:cursor-pointer"
               >
                 <a href="">Login</a>
               </button>

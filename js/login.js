@@ -7,18 +7,15 @@ loginBtn.addEventListener("click", function (event) {
 
   const accountPin = document.getElementById("account-pin").value;
 
-  const myAccountNumber = 01609522523;
-  const myAccountPin = 1234;
+//   const myAccountNumber = 01609522523;
+//   const myAccountPin = 1234;
 
-  if (
-    accountNumber.length == 11 &&
-    parseInt(accountNumber) === myAccountNumber
-  ) {
-    if (accountPin.length == 4 && parseInt(accountPin) === myAccountPin) {
-      window.location.href = 'main.html'
+  if (accountNumber.length == 11 && accountNumber.startsWith('01')) {
+    if (parseInt(accountPin) === 1234) {
+      window.location.href = "main.html";
     } else {
-        document.getElementById("wrong-pin").style.display = "inline";
-        document.getElementById("account-pin").classList.add("border-wrong");
+      document.getElementById("wrong-pin").style.display = "inline";
+      document.getElementById("account-pin").classList.add("border-wrong");
     }
   } else {
     document.getElementById("wrong-number").style.display = "inline";
