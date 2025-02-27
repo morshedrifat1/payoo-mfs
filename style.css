@@ -11,3 +11,9 @@ body{
 section>div{
     padding: 0px 20px;
 }
+
+.card-active{
+    background-color: #f3f8fe;
+    border: 1px solid red;
+    color: blue; 
+}
