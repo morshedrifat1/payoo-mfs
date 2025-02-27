@@ -6,7 +6,7 @@ document
     const withdrawAmount = document.getElementById("withdraw-amount").value;
     const convertWithdraw = parseFloat(withdrawAmount);
 
-    const mainBalance = document.getElementById("balance").innerText;
+     const mainBalance = document.getElementById("balance").innerText;
     const convertBalance = parseFloat(mainBalance);
 
     console.log(convertBalance);

@@ -24,8 +24,7 @@ addMoneyButton.addEventListener('click', function (event) {
           alert("Wrong Amount");
         }
       } else {
-        document.getElementById("wrong-pin").style.display = "inline";
-        document.getElementById("account-pin").classList.add("border-wrong");
+        alert('Wrong Pin Number')
       }
 
 })
